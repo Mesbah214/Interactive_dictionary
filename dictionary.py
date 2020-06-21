@@ -1,5 +1,12 @@
+# dictionary.py
+#       by: Mesbah Uddin
+#           A simple interactive app to get definition of the given word and the app will prompt
+#           for the right word if spelling mistake happens.
+
+
 # Works with the json file that contains word's definitions
 import json
+
 # Is responsible for prompting with the correct word if a spelling mistake happens.
 from difflib import get_close_matches as sense
 
@@ -18,6 +25,7 @@ def guess(key):
 
 
 print("press '/' to quit the program.")
+
 # Algs to run the program and process output.
 while True:
     key = input("Enter a word: ").lower()
